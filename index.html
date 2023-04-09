@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7781686508.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>Portfolio</h1>
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#qualifications">Qualifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hey I am <span>Aman Singh</span> <br>From Kanpur.</h1>
+                <!-- <div class="text-anim">
+                    <div class="fixed-text">I am a</div>
+                    <ul class="moving-text">
+                      <li><span>Web Developer...</span></li>
+                      <li><span>Designer...</span></li>
+                      <li><span>Freelancer... </span></li>
+                    </ul>
+                </div>                -->
+            </div>
+        </div>
+
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <img src="profile.png" alt="">
+                </div>
+                <div class="col2">
+                    <h1>About me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat inventore consectetur nostrum
+                        ducimus modi eveniet neque alias incidunt provident ullam, reprehenderit minima ipsam quia,
+                        recusandae laborum tenetur aspernatur accusamus architecto. </p>
+                    <h1>Skills</h1>
+                    <p>Html , Css , JavaScript , ReactJs</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1>My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        possimus quos dolore accusantium eligendi ut.</p>
+                    <a href="#">Know more</a>
+                </div>
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        possimus quos dolore accusantium eligendi ut.</p>
+                    <a href="#">Know more</a>
+                </div>
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        possimus quos dolore accusantium eligendi ut.</p>
+                    <a href="#">Know more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="row1">
+                <div class="icons">
+                    <div class="skill skill1">
+                        <img src="skills/html.png" alt="" width="100%">
+                    </div>
+                    <div class="skill skill2">
+                        <img src="skills/css.png" alt="" width="100%">
+                    </div>
+                    <div class="skill skill3">
+                        <img src="skills/js.png" alt="" width="100%">
+                    </div>
+                    <div class="skill skill4">
+                        <img src="skills/react.png" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="btn"> <button onclick="load()" class="btn1">Show More</button></div>
+
+            </div>
+
+            <div class="row2" id="rowload">
+                <div class="icons">
+                    <div class="skill skill5">
+                        <img src="skills/bootstrap.png" alt="" width="100%">
+                    </div>
+                    <div class="skill skill6">
+                        <img src="skills/c.png" alt="" width="100%">
+                    </div>
+                    <div class="skill skill7">
+                        <img src="skills/cpp.png" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="btn"><button onclick="hide()" class="btn1">Show Less</button></div>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="qualifications">
+        <div class="container">
+            <h2> My Qualifications</h2>
+            <div class="qualrow">
+                <div class="qcol1">
+                    <img src="education.jpg" alt="">
+                </div>
+                <div class="qcol2">
+                    <h2>Details</h2>
+                    <div class="tab-titles">
+                        <p class="tab-links active" onclick="opentab('qual1')">Education</p>
+                        <p class="tab-links" onclick="opentab('qual2')">Certificates</p>
+                        <p class="tab-links" onclick="opentab('qual3')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="qual1">
+                        <ul>
+                            <li>Highschool</li>
+                            <p>Done From Kamad Saraswati Inter College In 2017 With 89% Marks.</p>
+                            <li>Intermediate</li>
+                            <p>Done From Kamad Saraswati Inter College In 2019 With 79% Marks.</p>
+                            <li>Bachelor Of Computerb And Applications</li>
+                            <p>Pursuing Bca From Dayanand Academy Of Management And Studies 2022-2025. </p>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="qual2">
+                        <ul>
+                            <li>Ethical Hacking</li>
+                            <p>Done A Ethical Hacking Two Days Workshop In My College.</p>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="qual3">
+                        <ul>
+                            <li>Website Development</li>
+                            <p> Designed Many Websites To Gain My Experience <br> Fresher In Web Development.</p>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2>Contact Me</h2>
+                    <p><img src="contact/mail.png" alt=""> amansingh979429@gmail.com</p>
+                    <p><img src="contact/call.png" alt="">9129818796</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="contact/fb.png" alt="" width="50px"></a>
+                        <a href="#"><img src="contact/insta.png" alt="" width="83px"></a>
+                        <a href="#"><img src="contact/twitter.png" alt="" width="58px"></a>
+                        <a href="#"><img src="contact/linkdin.png" alt="" width="45px" id="adjust"></a>
+                    </div>
+                    <div class="btn"><a href="contact/CHSL.pdf" download><button class="btn2" id="cvbtn">Download
+                                Cv</button></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <h2>Send Me Message</h2>
+                    <form action="" name="submit-to-google-sheet">
+                        <input type="text" name="Name" id="" placeholder="Your Name" required>
+                        <input type="email" name="email" id="" placeholder="Your Email" required>
+                        <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+                        <div class="btn"><button type="submit" class="btn2">Submit</button></div>
+                    </form>
+                    <div id="msg">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy;.Created By Aman Singh.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
